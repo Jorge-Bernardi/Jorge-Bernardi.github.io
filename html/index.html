@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,209 @@
     <title>Dev Jorjao | Portfólio</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
     <header>
-        <a href="sobre.html"> Sobre Mim </a>
-        <a href="contatos.html"> Contatos </a>
-        <a href="fatec.html"> Sobre a Fatec</a>
-        <a href="projetos.html"> Meus Projetos</a>
-        <img src="../images/eu.jpg" >
-        <h1>Olá, <br> 
-            Sejam Bem-Vindos ao meu <span>Portfólio</span> </h1>
+
+        <nav>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Sobre Mim </a> </li>
+                    <li><a href="#fatec">Sobre a Fatec</a></li>
+                    <li><a href="#project">Meus Projetos</a></li>
+                    <li><a href="#contact">Contatos </a></li>
+                </ul>
+            </div>
+        </nav>
+
     </header>
 
-    <div>
+    <main>
+        <section class="home-container" id="home">
 
-    </div>
+            <div class="text-typing">
+                <p>Olá,</p>
+                <p>Seja Bem Vindo</p>
+                <p>Ao Meu Portfólio</p>
+            </div>
+
+            <div class="photo">
+                <img class="me" src="../images/eu.jpg">
+
+                <div class="icons">
+                    <a href="https://github.com/Jorge-Bernardi"> <i class='bx bxl-github'></i> </a>
+                    <a href="https://www.instagram.com/jorjao175/"> <i class='bx bxl-instagram'></i> </a>
+                    <a href="https://br.linkedin.com/in/jorgeguilhermebernardi"> <i class='bx bxl-linkedin'></i> </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-container" id="about">
+            <h2>Sobre Mim</h2>
+            <p> Olá Mundo, Me chamo Jorge Guilherme Bernardi, tenho 18 anos, nasci em Jaú - SP.
+                Sou entusiasta de tecnologia e no ano de 2024 ingressei na FATEC JAHU - Faculdade de Tecnologia de
+                Jahu
+                - e
+                já desenvolvi alguns projetos, os quais estarão disponíveis para visualização no meu Portfólio.
+                Além da programação tenho outros hobbies, como cozinhar e a música, toco diversos instrumentos,
+                entre
+                eles, bateria,
+                violão, atabaque, teclado e berimbau.
+            </p>
+        </section>
+
+
+        <section class="projects-container" id="project">
+            <h2 class="my-projects"> Meus Projetos</h2>
+            <div class="project-display">
+                <a href="https://github.com/GoLearn-App">
+                    <div class="projeto-1">
+                        <h2>GoLearn</h2>
+                        <img class="golearn" src="/assets/images/golearn.svg">
+                        <h3>Tecnologias</h3>
+                        <i class='bx bxl-html5'></i>
+                        <i class='bx bxl-css3'></i>
+                        <p>Plataforma desenvolvida para estudos...</p>
+                    </div>
+                </a>
+                <a>
+                    <div class="projeto-2">
+                        <h2>Em construção</h2>
+                        <img class="starfitness" src="/assets/images/wallpaper.jpg">
+                        <h3>...</h3>
+                        <i class='bx bxl-react'></i>
+                        <i class='bx bxl-tailwind-css'></i>
+                        <i class='bx bxl-php'></i>
+                        <i class='bx bxs-data'></i>
+                        <p>...</p>
+                    </div>
+                </a>
+                <a>
+                    <div class="projeto-3">
+                        <h2>Em construção</h2>
+                        <img class="banco-digital" src="/assets/images/wallpaper.jpg">
+                        <h3>...</h3>
+                        <i class='bx bx-mobile-alt'></i>
+                        <i class='bx bxs-data'></i>
+                        <p>...</p>
+
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="fatec-container" id="fatec">
+
+            <p>
+            <h1>A Faculdade</h1>
+            <h3>A Faculdade de Tecnologia de Jahu - <span>FATEC-JAHU</span> é uma Instituição Pública de Ensino Superior
+                que
+                oferece cursos
+                de graduação para formação de Tecnólogos, visando atender segmentos atuais e emergentes da atividade
+                econômica.
+                <br>
+                <br>
+                <span> Missão: </span>Promover a formação de cidadãos e profissionais altamente qualificados capazes de
+                desenvolver a sociedade em todos os seus aspectos.
+                <br>
+                <br>
+                <span>Visão:</span> Através do ensino, pesquisa e extensão, ser reconhecida pela comunidade científica e
+                sociedade em geral, como um Centro de referência Tecnológica.
+                <br>
+                <br>
+                <span> Valores:</span> Contribuir na formação de cidadãos e profissionais que tenham consciência ética,
+                competência, responsabilidade e compromisso social.
+                <br>
+                <br>
+                Ela pertence ao Centro Estadual de Educação Tecnológica “Paula Souza”, uma autarquia estadual ligada à
+                Secretaria de Ciência, Tecnologia e Inovação.
+                <br>
+                <br>
+                O Centro Paula Souza administra 224 Escolas Técnicas Estaduais (ETECs) e 76 Faculdades de Tecnologia
+                (FATECs) no
+                Estado de São Paulo.
+                <br>
+                <br>
+                A Faculdade de Tecnologia de Jahu foi criada pelo Decreto n.º 31.255, de 23 de fevereiro de 1990,
+                retificado por
+                publicação do D.O.E. de 01/03/1990. Pelo Decreto n.º 39.471, de 07 de novembro de 1994, foi dada nova
+                redação a
+                dispositivo que especifica do Decreto 31.255, de 23 de fevereiro de 1990.
+                <br>
+                <br>
+                Está localizada no Município de Jaú, à Rua Frei Galvão, s/n.º, no Bairro Jardim Pedro Ometto. CEP:
+                17212-599.
+                <br>
+                <br>
+                <span>Contatos:</span>
+                Email: f020dir@cps.sp.gov.br
+                Tel: (14) 3622-8280 / 3622-8037 / 3621-9044
+            </h3>
+            <br>
+            <br>
+            <img src="../images/fatec-logo.png" style="width:300px;height:300px;">
+            <img src="../images/fatec-jahu-vistadafrente.jpg" style="width: 300px;height:300px;">
+            <img src="../images/fatec-jahu-vistadecima.png" style="width:300px;height:300px;">
+            <br>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.038255333042!2d-48.55077262458787!3d-22.314392916968647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7583ac8032c15%3A0xd3db07d9284a5cb2!2sFaculdade%20de%20Tecnologia%20de%20Jahu!5e0!3m2!1spt-PT!2sbr!4v1715781849056!5m2!1spt-PT!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </p>
+        </section>
+        
+       
+
+
+        <section class="contact-container" id="contact">
+            <p>
+               Se Conecte comigo!
+            </p>
+            <br>
+            <br>
+            <a href="https://github.com/Jorge-Bernardi">
+                <img src="../images/logo-github.png" style="width: 200px; height: 200px;">
+            </a>
+
+
+            <a href="">
+                <img src="../images/logo-gmail.png" style="width: 200px; height: 200px;">
+            </a>
+
+            <a href="https://br.linkedin.com/in/jorgeguilhermebernardi">
+                <img src="../images/logo-linkedin.png" style="width: 200px; height: 200px;">
+            </a>
+
+
+
+            <a href="https://www.instagram.com/jorjao175/">
+                <img src="../images/logo-instagram.png" style="width: 200px; height: 200px;">
+            </a>
+
+            <form action="" method="get">
+                <fieldset>
+                    <label>
+                        Nome: <input type="text" name="Seu Nome" id="">
+                    </label>
+                    <br>
+                    <label>
+                        Email: <input type="email" name="Seu Email" id="">
+                    </label>
+                    <br>
+                    <label>
+                        Escreva sua dúvida : <input type="text">
+                    </label>
+                </fieldset>
+            </form>
+
+        </section>
+    </main>
 
     <footer>
-        Dev Jorjao | 
+        &#169;2024 Dev Jorjao |
     </footer>
 </body>
+
 </html>
