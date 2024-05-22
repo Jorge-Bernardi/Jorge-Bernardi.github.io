@@ -7,27 +7,51 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
-header{
-    border: solid 2px #c5758c;
-    background-color: #520e1f;
-}
+
 
 a{
     text-decoration: none;
 }
 body{
-    background-color: #400710;
+    background-color: #C5C5C5;
 }
-footer{
-    background-color: #c5758c;
+.home-container{
+   padding: 8px;
+   display: flex;
+   align-items: center;
+
 }
-img{
+img.me{
     border-radius: 50%;
+    padding: 8px;
 }
-li{
-    display: inline;
-    width: 250px;
-    height: fit-content;
-    padding: 20px;
-    background-color: #c5758c;
+
+footer{
+    background-color: #147C12;
 }
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+  }
