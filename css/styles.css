@@ -13,14 +13,64 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: #C5C5C5;
+    background-color: lavender;
+  
 }
 .home-container{
    padding: 8px;
    display: flex;
    align-items: center;
+   padding-top: 400px;
 
 }
+
+.prova{
+  align-items: center;
+  padding-top: 200px;
+  padding-left: 200px;
+}
+/*
+.about-container{
+    display: block;
+    height: 400px;
+    width: 400px;
+}
+*/
+
+.about-container{
+  padding-top: 400px;
+}
+.sobre-container{
+  border: 3px solid black;
+}
+.projects-container{
+  padding-top: 400px;
+}
+.projeto-1{
+  border: 3px solid black;
+  border-radius: 70px;
+  align-self: start;
+}
+.projeto-2{
+  border: 3px solid black;
+  border-radius: 70px;
+}
+.projeto-3{
+  border:3px solid black;
+  border-radius: 70px ;
+}
+
+
+
+
+
+.fatec-container{
+  padding-top: 400px;
+}
+.contact-container{
+  padding-top: 400px;
+}
+
 img.me{
     border-radius: 50%;
     padding: 8px;
@@ -36,7 +86,7 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #147C12;
 }
 
 li {
@@ -53,5 +103,5 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: #ffffff;
   }
