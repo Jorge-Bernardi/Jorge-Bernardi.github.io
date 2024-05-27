@@ -1,4 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
     margin: 0;
@@ -7,101 +10,449 @@
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
+  /* Cabeçalho*/
+header {
+    overflow-x: hidden;
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    z-index: 100;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+    font-family: "Rubik", sans-serif;
+    
+}
 
-
-a{
+a {
     text-decoration: none;
 }
-body{
-    background-color: lavender;
-  
+
+  /* BODY */
+
+
+body {
+    overflow-x: hidden;
+    background-color: #f9f9fb;  
+    
 }
-.home-container{
-   padding: 8px;
-   display: flex;
-   align-items: center;
-   padding-top: 400px;
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #32cd32;
+}
+
+.logo {
+    float: left;
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+}
+
+.navbar-links {
+    color: linear-gradient(75deg, #32CD32, #FFD700);
+    float: right;
+    margin: auto;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: auto;
+}
+
+.navbar-links li {
+    display: inline-block;
+    margin: auto;
+    margin-right: 30px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+    font-size: 25px;
+}
+
+.navbar-links a {
+    color:  #32cd32;
+    text-decoration: none;
+}
+
+.navbar-links li:hover {
+    color: #32cd32;
+    border-bottom-color: #FFD700;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    background-image: url(../images/gifs-de-matrix-1.gif);
+    height: 80vh;
+    width: 100%;
 
 }
 
-.prova{
-  align-items: center;
-  padding-top: 200px;
-  padding-left: 200px;
-}
-/*
-.about-container{
-    display: block;
-    height: 400px;
-    width: 400px;
-}
-*/
 
-.about-container{
-  padding-top: 400px;
+
+.icons {
+    font-size: 7vh;
+    margin-top: 20px;
+    text-align: center;
 }
-.sobre-container{
-  border: 3px solid black;
+
+.icons i {
+    color: white;
+    padding: 5px;
+    transition: .3s ease;
 }
-.projects-container{
-  padding-top: 400px;
-}
-.projeto-1{
-  border: 3px solid black;
-  border-radius: 70px;
-  align-self: start;
-}
-.projeto-2{
-  border: 3px solid black;
-  border-radius: 70px;
-}
-.projeto-3{
-  border:3px solid black;
-  border-radius: 70px ;
+
+.icons i:hover {
+    transform: scale(0.90);
+    color: #32cd32;
+    cursor: pointer;
 }
 
 
-
-
-
-.fatec-container{
-  padding-top: 400px;
-}
-.contact-container{
-  padding-top: 400px;
+.photo{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: auto;
 }
 
-img.me{
+.me {
+    width: 35vh;
     border-radius: 50%;
-    padding: 8px;
+    -webkit-box-shadow: 0 0 12.5px -1.5px #fff;
+    -moz-box-shadow: 0 0 12.5px -1.5px #fff;
+    box-shadow: 0 0 12.5px -1.5px #fff;
+    margin: 5px;
 }
 
-footer{
-    background-color: #147C12;
+.text-typing{
+    align-content: center;
+    font-size: 4rem;
+    font-weight: 800;
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+   /* 
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+   /* border-right: .20em solid rgb(255, 255, 255); /* The typwriter cursor */
+   /* white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .20em; /* Adjust as needed */
+    /*animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite; */
 }
 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #147C12;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #ffffff;
+  
+  /* The typing effect */
+  /*@keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
   }
+  
+  /* The typewriter cursor effect */
+  /*@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255); }
+  } */
+        
+
+.wave {
+    padding: 0;
+    margin: 0;
+    align-content: start;
+}
+
+.about-text {
+    min-height: 60vh;
+    padding: 7rem 7% 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    min-width: 55vh;
+}
+
+.about-display {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.about-img {
+    display: flex;
+    margin-left: 100px;
+}
+
+.planet {
+    width: 26rem;
+    animation-name: floating-planet;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.astronaut {
+    width: 16rem;
+    animation-name: floating-astronaut;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating-astronaut {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 100px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@keyframes floating-planet {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 50px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.about-text h2 {
+    font-size: 4rem;
+    justify-content: flex-start; 
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text p {
+    font-size: 24px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    --border-size: 3px;
+    --border-angle: 0turn;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    animation: bg-spin 1.5s linear infinite;
+  }
+  
+  .about-text p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: var(--border-size);
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #fff,
+        #fff 50%,
+        #fff
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #FFD700,
+        #14920b
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box; 
+    z-index: -1;
+  }
+  
+  @keyframes bg-spin {
+    to {
+      --border-angle: 1turn;
+    }
+  }
+  
+  @property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+  }
+
+  .my-projects {
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+
+  .project-display {
+      display: flex;
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+  }
+
+  .project-display a {
+      text-decoration: none;
+  }
+  
+  .projects-container {
+      align-content: center;
+      text-align: center;
+      width: 100vw;
+      padding: 7rem 7% 2rem;
+  }
+
+.projeto-1,
+.projeto-2,
+.projeto-3 {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  width: 25vw;
+  height: 65vh;
+  padding: 20px;
+  margin: 20px; 
+  text-align: center;
+  --border-size: 3px;
+  --border-angle: 0turn;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  animation: bg-spin 1.5s linear infinite;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.projeto-1:hover,
+.projeto-2:hover,
+.projeto-3:hover {
+    transform: scale(0.95);
+}
+ 
+  .projeto-1::before,
+  .projeto-2::before,
+  .projeto-3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px;
+    padding: var(--border-size);
+    background-image: conic-gradient(
+        from var(--border-angle),
+        #fff,
+        #fff 50%,
+        #fff
+      ),
+      conic-gradient(
+        from var(--border-angle),
+        transparent 20%,
+        #FFD700,
+        #19af0a
+      );
+    background-origin: border-box;
+    background-clip: content-box, border-box; 
+    z-index: -1;
+  }
+
+.golearn,
+.prova_web,
+.prova_alg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.wave-bottom {
+    padding: 0;
+    margin-bottom: -20px;
+}
+
+.wave-bottom img {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+    /* Rodapé */
+
+
+
+
+.copy {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 0.8rem;
+    color: white;
+    background-color: black;
+    height: 45vh;
+}
+
+.copy h2 {
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons-footer {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.icons-footer i {
+    color: white;
+    padding: 5px;
+    transition: .3s ease;
+    margin-bottom: 20px;
+}
+
+.icons-footer i:hover {
+    transform: scale(0.90);
+    color: #32cd32;
+    cursor: pointer;
+}
+
+.section-forms{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+form input, form textarea{
+    width: 100%;
+    background-color: black;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+form input::placeholder{
+    color: #32CD32;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar{
+    width: 120px;
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
