@@ -143,36 +143,12 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-   /* 
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-   /* border-right: .20em solid rgb(255, 255, 255); /* The typwriter cursor */
-   /* white-space: nowrap; /* Keeps the content on a single line */
-    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    /*letter-spacing: .20em; /* Adjust as needed */
-    /*animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite; */
+
 }
 
-  
-  /* The typing effect */
-  /*@keyframes typing {
-    from { width: 0 }
-    to { width: 50% }
-  }
-  
-  /* The typewriter cursor effect */
-  /*@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255); }
-  } */
         
 
-.wave {
-    padding: 0;
-    margin: 0;
-    align-content: start;
-}
+
 
 .about-text {
     min-height: 60vh;
@@ -192,6 +168,30 @@ body {
 .about-img {
     display: flex;
     margin-left: 100px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.about-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .planet {
@@ -368,17 +368,49 @@ body {
     margin: 0 auto;
 }
 
-.wave-bottom {
-    padding: 0;
-    margin-bottom: -20px;
+
+
+
+
+.fatec-container,
+.dsm-container {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 7% 2rem;
 }
 
-.wave-bottom img {
-    margin: 0;
-    padding: 0;
+.fatec-text,
+.dsm-text {
+    font-size: 26px;
 }
 
+span {
+    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
 
+.fatec-container p,
+.dsm-container p {
+    text-align: right;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.map-container {
+
+    justify-content: center;
+    padding: 7rem 7% 2rem;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    border-radius: 15px;
+}
 
     /* Rodapé */
 
@@ -421,38 +453,53 @@ body {
 }
 
 .section-forms{
-    padding: 80px 4%;
+    padding: 120px ;
 }
+
 form{
-    max-width: 500px;
+    max-width: 50rem;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
+    
+}
+
+fieldset{
+    border-radius: 30px;
+    width: 100%;
 }
 form input, form textarea{
-    width: 100%;
-    background-color: black;
-    border: 0;
+    width: 90%;
+    background-color: #f9f9fb;
+    border: 2px solid black;
     outline: 0;
-    padding: 20px 15px;
+    padding: 20px  5px ;
     border-radius: 15px;
     color: #fff;
+    margin: 20px;
+    justify-content: center;
 }
 form input::placeholder{
     color: #32CD32;
 }
+form textarea::placeholder{
+    color: #32CD32;
+}
+
 
 form textarea{
     resize: none;
-    max-height: 200px;
+    
 }
-form .btn-enviar{
-    width: 120px;
-    background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
-    color: #fff;
+.botao-enviar{
+    width: 400px;
+    
     font-weight: 700;
-    cursor: pointer;
+   
 }
-
+form button::placeholder{
+   background-color: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
+    color: black; 
+}
