@@ -57,6 +57,12 @@ body {
     
 }
 
+
+section{
+    padding: 7rem;
+}
+
+
 .navbar-links {
     color: linear-gradient(75deg, #32CD32, #FFD700);
     float: right;
@@ -194,33 +200,7 @@ body {
     }
 }
 
-.planet {
-    width: 26rem;
-    animation-name: floating-planet;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
 
-.astronaut {
-    width: 16rem;
-    animation-name: floating-astronaut;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes floating-astronaut {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 100px); }
-    100%   { transform: translate(0, -0px); }   
-}
-
-@keyframes floating-planet {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 50px); }
-    100%   { transform: translate(0, -0px); }   
-}
 
 .about-text h2 {
     font-size: 4rem;
@@ -268,7 +248,7 @@ body {
     background-clip: content-box, border-box; 
     z-index: -1;
   }
-  
+
   @keyframes bg-spin {
     to {
       --border-angle: 1turn;
@@ -456,50 +436,63 @@ span {
     padding: 120px ;
 }
 
+.formTitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 10px;
+}
+
 form{
     max-width: 50rem;
-    margin: 0 auto;
+    margin: 4rem auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
     gap: 10px;
-    
-}
-
-fieldset{
-    border-radius: 30px;
-    width: 100%;
-}
-form input, form textarea{
-    width: 90%;
-    background-color: #f9f9fb;
-    border: 2px solid black;
-    outline: 0;
-    padding: 20px  5px ;
+    border: 1px solid none;
+    box-shadow: 0 0  10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     border-radius: 15px;
-    color: #fff;
-    margin: 20px;
+    text-align: center;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #f9f9fb;
+    border: 1px solid #ccc;
+    outline: 0;
+    padding: 20px;
+    border-radius: 15px;
+    color: black;
+    margin-bottom: 10px;
     justify-content: center;
-}
-form input::placeholder{
-    color: #32CD32;
-}
-form textarea::placeholder{
-    color: #32CD32;
-}
-
-
-form textarea{
-    resize: none;
     
 }
+
+::placeholder{
+    color: #ddd;
+}
+
 .botao-enviar{
     width: 400px;
-    
+    background-color: #32CD32;
+    color: white;
     font-weight: 700;
-   
+   padding: 10px;
+   border: none;
+   border-radius: 10px;
+   font-family: "Poppins", sans-serif;
+   align-items: center;
+   transition: all .3s ease;
 }
-form button::placeholder{
-   background-color: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
-    color: black; 
+
+.botao-enviar:hover {
+    background-color: #14920b;
+    transform: scale(0.95);
+}
+
+.btnContainer {
+    align-items: center;
+    text-align: center;
 }
