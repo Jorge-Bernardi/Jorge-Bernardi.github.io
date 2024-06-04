@@ -1,45 +1,28 @@
-.text-typing p:nth-child(1){
-width: 200px;  
--webkit-animation: type 1s steps(4, end);
-animation: type 0.5s steps(4, end);
--webkit-animation-fill-mode: forwards;
-animation-fill-mode: forwards;
+.text-typing {
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
-.text-typing p:nth-child(2){
-    width: 200px;  
-    -webkit-animation: type 1s steps(4, end);
-    animation: type 0.5s steps(4, end);
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-    }
-    
 
-@keyframes type{
-    0%{ 
-        width: 0;
-    }
-    99.9%{
-          border-right: 0.05em solid #ccc;     
-    }
-    100%{
-        border: none;
-    }
+.text {
+  width: 19ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+  margin-right: 1rem;
 }
-@keyframes type2 {
-    0%{ 
-        width: 0;
-    }
-    99.9%{
-          border-right: 0.05em solid #ccc;     
-    }
-    100%{
-        border: none;
-    }
-}
-@keyframes blink-caret {
-    50% {
-        border-color: transparent;
-    }
+
+@keyframes typing {
+  from {
+    width: 0
   }
+}
 
-
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
