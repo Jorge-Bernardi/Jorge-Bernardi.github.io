@@ -13,6 +13,7 @@
 
  /*USAR MEDIA QUERIES*/
 
+
 body {
     overflow-x: hidden;
     
@@ -201,12 +202,14 @@ span{
 .projeto-2 p,
 .projeto-3 p{
     color: #000000;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .projeto-1 i,
-.projeto-2 i,
-.projeto-3 i{
+.projeto-2 i{
     font-size: 2rem;   
+}
+.projeto-3 i{
+    font-size: 1.5rem;
 }
 .projects-container{
     background-color: #000000;
