@@ -26,9 +26,10 @@
     }
 
     section {
-        padding: 3rem 7% 2rem;
+        padding: 1.5rem 7% 1.5rem;
         align-content: center;
         min-height: 50vh;
+        width: 60vh;
     }
 
     ::-webkit-scrollbar {
@@ -45,12 +46,12 @@
     header {
         overflow-x: hidden;
         position: fixed;
-        width: 85vw;
+        width: 90%;
         display: flex;
         z-index: 50px;
         justify-content: space-around;
         background-color: black;
-        padding: 10px;
+        padding: 20px;
         font-family: "Poppins", sans-serif;
         border-radius: 10px;
         box-shadow: 0.3px #32CD32;
@@ -124,8 +125,9 @@
         align-items: center;
         background-color: #32CD32;
         background-image: url(../images/gifs-de-matrix-1.gif);
-        color: #000000;
-       
+        color: black;
+        width: 120%;
+        
     }
 
     .text-typing {
@@ -139,18 +141,21 @@
         animation-name: type;
         animation-duration: 4s;
         animation-delay: 2s;
+        height: 25px;
 
     }
 
 
     p {
-        color: aliceblue;
+        color: white;
     }
 
     h2 {
-        color: aliceblue;
-        font-size: 25px;
+        color: white;
+        font-size: 30px;
         font-weight: 700;
+        margin: 25px;
+        align-items: center;
     }
 
     .me {
@@ -166,8 +171,9 @@
 
 
     .about-container {
-        background-color: #000000;
-
+        background-color: black;
+        padding: 85px;
+        width: 120%;
     }
 
     .about-text,
@@ -175,7 +181,7 @@
     .dsm-text {
         border: 2px solid -webkit-linear-gradient(75deg, #32CD32, #FFD700);
         border-radius: 15px;
-        box-shadow: 0px 0px 10px rgba(55, 201, 10, 0.3);
+        box-shadow: 0px 0px 20px rgba(55, 201, 10, 0.7);
         padding: 5px;
         font-size: 15px;
         margin: 5px;
@@ -184,7 +190,7 @@
 
     span {
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 30px;
         background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -193,35 +199,52 @@
     .map {
         background-color: #000000;
         text-align: center;
-        width: 350px;
+        width: 300px;
 
     }
 
     .map iframe {
         width: 80%;
-        height: 450px;
-        border: 1px solid none;
+        height: 350px;
+        border: 2px solid -webkit-linear-gradient(75deg, #32CD32, #FFD700);
         border-radius: 15px;
+        box-shadow: 0px 0px 20px rgba(55, 201, 10, 0.7);
 
     }
 
     /*---------------------------------------------
                     PROJETOS
     ---------------------------------------------- */
+    
+    .projects-container {
+        align-content: center;
+        text-align: center;
+        width: 450px;
+        padding: 15px 7% 2rem;
+    }
+
 
     .projeto-1 h2,
     .projeto-2 h2,
     .projeto-3 h2 {
         color: #000000;
         font-size: 15px;
+        margin: auto;
+    }
+
+    .projeto-1 h3,
+    .projeto-2 h3,
+    .projeto-3 h3 {
+        font-size: 12px;
     }
 
     .projeto-1 p,
     .projeto-2 p,
     .projeto-3 p {
         color: #000000;
-        font-size: 15px;
+        font-size: 10px;
     }
+    
 
     .projeto-1 i,
     .projeto-2 i {
@@ -234,6 +257,7 @@
 
     .projects-container {
         background-color: #000000;
+        width: 120%;
     }
 
     .my-projects {
@@ -256,27 +280,21 @@
         text-decoration: none;
     }
 
-    .projects-container {
-        align-content: center;
-        text-align: center;
-        width: 350px;
-        padding: 7rem 7% 2rem;
-    }
+    
 
     .projeto-1,
     .projeto-2,
     .projeto-3 {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        width: 90px;
+        width: 100px;
         height: 400px;
         padding: 15px;
-        margin: 10px;
         text-align: center;
         --border-size: 3px;
         --border-angle: 0turn;
         border-radius: 15px;
         position: relative;
-        z-index: 1;
+        z-index: 1px;
         background: linear-gradient(60deg, #32CD32, #FFD700);
         transition: all 0.3s ease;
         cursor: pointer;
@@ -294,6 +312,7 @@
     .prova_web,
     .prova_alg {
         width: 100%;
+        height: 200px;
         margin: 0 auto;
         border-radius: 15px;
     }
@@ -301,24 +320,25 @@
 
     /*---------------------------------------------
                     FORMULÁRIO
- ---------------------------------------------- */
+     ---------------------------------------------- */
 
     .forms-container {
-        background-color: #000000;
-        color: aliceblue;
-        padding: 0rem 7% 2rem;
+        background-color: black;
+        color: white;
+        padding: 10px 7% 20px;
+        width: 120%;
     }
 
     .formTitle {
         text-align: center;
         font-weight: 700;
-        font-size: 2rem;
+        font-size: 30px;
         margin: 10px;
     }
 
     form {
-        max-width: 50rem;
-        margin: 4rem auto;
+        max-width: 300px;
+        margin: 50px ;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -350,7 +370,7 @@
     }
 
     .botao-enviar {
-        width: 400px;
+        width: 200px;
         background-color: #32CD32;
         color: white;
         font-weight: 700;
@@ -375,17 +395,18 @@
 
 
     /*---------------------------------------------
-                    FOOTER
- ---------------------------------------------- */
+                         FOOTER
+    ---------------------------------------------- */
 
 
     .footer {
         background: linear-gradient(75deg, #32CD32, #FFD700);
+        width: 120%;
     }
 
     .icons-footer {
         background-color: #000000;
-        font-size: 6rem;
+        font-size: 30px;
         text-align: center;
         list-style: none;
         padding: 0;
@@ -395,8 +416,9 @@
     .icons-footer i {
         color: rgb(0, 0, 0);
         padding: 5px;
-        transition: .3s ease;
+        transition: 0.3s ease;
         margin-bottom: 20px;
+        font-size: 30px;
     }
 
     .icons-footer a {
@@ -405,7 +427,7 @@
 
     .icons-footer i:hover {
         cursor: pointer;
-        font-size: 5.5rem;
+        font-size: 40px;
     }
 
     .copy {
@@ -415,15 +437,16 @@
         font-size: 0.8rem;
         color: white;
         background-color: rgb(0, 0, 0);
-        height: 45vh;
+        height: 300px;
         border-radius: 50px;
     }
 
     .copy h2 {
-        font-size: 3.5rem;
+        font-size: 30px;
         background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        
 
     }
 
@@ -457,8 +480,8 @@
     }
 
     /*---------------------------------------------
-                    HEADER
- ---------------------------------------------- */
+                          HEADER
+    --------------------------------------------- */
 
     /*USAR MEDIA QUERIES*/
 
