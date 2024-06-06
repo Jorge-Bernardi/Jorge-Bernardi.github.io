@@ -1,7 +1,8 @@
 /*---------------------------------------------
                     CELULAR
  ---------------------------------------------- */
-@media (max-width: 450px) {
+@media screen and (max-width: 450px){
+    
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
     * {
@@ -467,7 +468,14 @@
 /*---------------------------------------------
                     TABLET
  ---------------------------------------------- */
-@media (min-width: 800px) and (max-width: 1024px) {
+
+
+
+
+@media screen and (min-width: 800px) and (max-width: 1024px)  {
+    
+
+
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -493,7 +501,7 @@
     }
 
     section {
-        padding: 7rem 7% 2rem;
+        padding: 4rem 7% 2rem;
         align-content: center;
         min-height: 100vh;
     }
@@ -576,8 +584,8 @@
 
 
     /*---------------------------------------------
-                    HOME
- ---------------------------------------------- */
+                         HOME
+    ---------------------------------------------- */
 
 
     .home-container {
@@ -591,7 +599,7 @@
 
     .text-typing {
         align-content: center;
-        font-size: 4rem;
+        font-size: 40px;
         font-weight: 800;
         background: -webkit-linear-gradient(75deg, #32CD32, #FFD700);
         -webkit-background-clip: text;
@@ -600,6 +608,7 @@
         animation-name: type;
         animation-duration: 4s;
         animation-delay: 2s;
+        
 
 
     }
@@ -616,14 +625,14 @@
 
     .me {
         border-radius: 50%;
-        width: 20rem;
+        width: 150px;
 
     }
 
 
     /*---------------------------------------------
-                    SOBRE
- ---------------------------------------------- */
+                          SOBRE
+    ---------------------------------------------- */
 
 
     .about-container {
@@ -665,8 +674,8 @@
     }
 
     /*---------------------------------------------
-                    PROJETOS
- ---------------------------------------------- */
+                          PROJETOS
+    ---------------------------------------------- */
 
     .projeto-1 h2,
     .projeto-2 h2,
@@ -724,8 +733,8 @@
     .projeto-2,
     .projeto-3 {
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        width: 25vw;
-        height: 65vh;
+        width: 100%;
+        height: 40vh;
         padding: 20px;
         margin: 20px;
         text-align: center;
@@ -757,8 +766,8 @@
 
 
     /*---------------------------------------------
-                    FORMULÁRIO
- ---------------------------------------------- */
+                         FORMULÁRIO
+    ---------------------------------------------- */
 
     .forms-container {
         background-color: #000000;
@@ -832,8 +841,8 @@
 
 
     /*---------------------------------------------
-                    FOOTER
- ---------------------------------------------- */
+                        FOOTER
+    ---------------------------------------------- */
 
 
     .footer {
